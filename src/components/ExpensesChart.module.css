@@ -1,0 +1,168 @@
+.wrapper {
+  /* height: 700px; */
+  width: 540px;
+  margin-top: 60px;
+}
+
+/* BALANCE BOX */
+.balanceBox {
+  background: hsl(10, 79%, 65%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 40px 27px 32px;
+}
+
+h2 {
+  color: hsl(33, 100%, 98%);
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.balanceNumber {
+  color: hsl(33, 100%, 98%);
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+/* SPENDING BOX */
+.spendingBox {
+  background: hsl(33, 100%, 98%);
+  border-radius: 20px;
+  margin-top: 24px;
+  padding: 20px 36px;
+}
+
+h1 {
+  font-size: 34px;
+  letter-spacing: -1px;
+  margin: 0;
+  margin-top: 14px;
+}
+
+.chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 250px;
+}
+
+hr {
+  border: 0;
+  border-bottom: 2px solid rgba(56, 35, 20, 0.1);
+  margin-top: 40px;
+}
+
+/* THIS IS A PAIN IN THE ASS, THIS SHOULD BE IN bar.module.css, but it has to be here */
+/* I'm passing a class down based on the height of the vertical bar */
+/* So this class HAS to be in this file -> to be passed down correctly */
+.maxAmount {
+  background: rgba(118, 181, 188, 1);
+  background-color: rgba(118, 181, 188, 1);
+}
+
+.maxAmount:hover {
+  background-color: rgba(118, 181, 188, 0.6);
+}
+
+.verticalBarColor {
+  background-color: rgba(236, 119, 95, 1);
+}
+
+.verticalBarColor:hover {
+  background-color: rgba(236, 119, 95, 0.6);
+}
+/*  */
+
+/* TOTAL */
+.total {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  color: rgba(56, 35, 20, 0.6);
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.totalNumber {
+  color: hsl(25, 47%, 15%);
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.percentage {
+  text-align: right;
+}
+
+.percentNumber {
+  color: rgb(56, 35, 20);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 560px) {
+  .wrapper {
+    width: 345px;
+    margin-top: 0;
+  }
+
+  .balanceBox {
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .balanceNumber {
+    font-size: 24px;
+  }
+
+  .balanceBox img {
+    width: 60px;
+  }
+
+  .spendingBox {
+    margin-top: 16px;
+    padding: 10px 14px 20px 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .chart {
+    height: 238px;
+  }
+
+  hr {
+    margin-top: 20px;
+    margin-left: 8px;
+  }
+
+  .total {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 8px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .totalNumber {
+    font-size: 32px;
+  }
+}
